@@ -1,0 +1,73 @@
+% This file is iccc.tex.  It contains the formatting instructions for and acts as a template for submissions to ICCC.  It borrows liberally from the AAAI and IJCAI formats and instructions.  It uses the files iccc.sty, iccc.bst and iccc.bib, the first two of which also borrow liberally from the same sources.
+
+
+\documentclass[letterpaper]{article}
+\usepackage{iccc}
+
+\usepackage{times}
+\usepackage{helvet}
+\usepackage{courier}
+\pdfinfo{
+/Title (an evaluation of the impact of constraints on the perceived creativity of narrative generating software)
+/Subject (Proceedings of ICCC '18)
+/Author (Lewis Mckeown)}
+% The file iccc.sty is the style file for ICCC proceedings.
+%
+\title{An Evaluation of the Impact of Constraints on the Perceived Creativity of Narrative Generating Software}
+\author{Lewis Mckeown\\
+School of Computing\\
+University of Kent\\
+Canterbury\\
+lam54@kent.ac.uk\\
+}
+\setcounter{secnumdepth}{0}
+
+\begin{document} 
+\maketitle
+\begin{abstract}
+\begin{quote}
+There are a variety of ways to understand the computational generation of narratives. This project attempts to categorise them as a spectrum which arises from the application of constraint. To assess the validity of the spectrum, the literature surrounding narrative generation systems is introduced, as are ways of evaluating their creativity. This provides the groundwork for an investigation into the impact of constraints on the perceived creativity of the output of narrative generating systems. The investigation aims to understand what level of constraint application results in the most creative output. To achieve this, software is written that generates short stories, using adjustable levels of constraint meant to reflect those utilised by software at different positions on the spectrum. The creativity of the output is then assessed by human evaluators. The results are promising and show a clear variation of response based on the level of constraint imposed on the narrative generation process. This supports the assessment of narrative generation software in terms of a spectrum of constraint application. The results show a sweet spot for maximal creativity closer to the less constrained end of the spectrum, which demonstrates the potential for more creative software by the relaxing of constraints. If a system strays too close to randomness however, the perceived creativity will be heavily penalised. In contrast the strictest application of constraint showed the second highest level of creativity. This is a fine line, as too relaxed or too moderate applications of constraint will result in much lower creativity ratings. \end{quote}
+\end{abstract}
+
+\section{Introduction}
+
+\section{Computers and Creativity}
+Computers and the software running on them are generally seen as supportive tools for human intellectual endeavours, or  as a means of automating tedious tasks. The idea of computers making something creative, independently and without human interaction, although not new, has expanded in recent years with the popularisation of accessible machine learning and artificial intelligence technologies\footnote{See Tensorflow as an example of consumer friendly machine intelligence software \citation{tensorflowIntro}.}. These have applications in a great many areas, from diagnostic medicine to written language translation \citation{googletranslatere}. Their varied uses demonstrate computer intelligence's utility in a number of problem domains, including computational creativity.\\
+%------------------------%
+\\Creativity can be defined as
+\begin{quote}
+The ability to transcend traditional ideas, rules, patterns, relationships, or the like, and to create meaningful new ideas, forms, methods [and] interpretations.\\
+\citation{camDict}
+\end{quote}
+The traditional conception of computers as rigid, logic following machines could not be further from the above definition of creativity or notions of human artists who are renowned for the free flowing connection of ideas and concepts\footnote{See \citation{BODEN1998347} and Chapter 3 for reference to historical creators famous for transforming conceptual spaces and discussion on what type of creativity is historically valued.}. However the implementation of algorithms in non-traditional use cases and attempts to allow computers to learn independently have narrowed this gap significantly\footnote{See The Painting Fool and its continued advances \citation{colton2012painting, colton2015painting}.}, facilitating the development of a spectrum of creative computing software. From more rigid, context aware systems like CAST \citation{leon2008creative} to LSTM RNNs\footnote{Long Short-Term Memory Recurrent Neural Networks.} like Benjamin \citation{SunspringRNN} which are discussed in Chapter 3. The world of narrative and text generation features many examples of this software and the variety of artefacts produced shows how impactful the level of constraints imposed during generation\footnote{Where on the spectrum from rigid, goal oriented software, to less restricted, less context aware machine learning applications a system could be classified. See Section TKTKTK for more detail.} are on the output - and subsequent creative merit - of the software and its works.\\
+
+\section{Acknowledgments}
+
+The preparation of these instructions and the \LaTeX{} and Word files was 
+facilitated by borrowing from similar documents used for AAAI and IJCAI proceedings.
+
+
+%\appendix{\LaTeX{} and Word Style Files}\label{stylefiles}
+
+%The \LaTeX{} and Word style files are available on the ICCC-13
+%website, {\tt http://computationalcreativity.net/iccc2013/}.
+%These style files implement the formatting instructions in this
+%document.
+
+%The \LaTeX{} files are {\tt iccc.sty} and {\tt iccc.tex}, and
+%the Bib\TeX{} files are {\tt iccc.bst} and {\tt iccc.bib}. The
+%\LaTeX{} style file is for version 2e of \LaTeX{}, and the Bib\TeX{}
+%style file is for version 0.99c of Bib\TeX{} ({\em not} version
+%0.98i).
+
+%The Microsoft Word style file consists of a single template file, {\tt
+%iccc.dot}. 
+
+%These Microsoft Word and \LaTeX{} files contain the source of the
+%present document and may serve as a formatting sample.  
+
+\bibliographystyle{iccc}
+\bibliography{CO880Bib}
+
+
+\end{document}
